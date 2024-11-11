@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { useEffect } from 'react';
 import { Flex, Layout } from 'antd'
 import SearchGroup from './SearchGroup'
