@@ -49,7 +49,7 @@ function SearchGroup() {
       query
     })
     console.log(jsonBody)
-    const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:4000" : ""
+    const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:4000" : "https://sedate-jungle-chips.glitch.me"
     fetch(`${baseUrl}/${selectedFeature}`, {
       method: "POST",
       headers: {
@@ -69,7 +69,7 @@ function SearchGroup() {
       setQuery('')
       setLoading(false)
     })
-  }, [loading, query, results])
+  }, [currentTabKey, loading, query, results])
   function onTabClick(clickedKey) {
     console.log(`Tab key selected: `, clickedKey)
     if (currentTabKey !== clickedKey) {
