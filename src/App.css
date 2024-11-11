@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #c29c74;
+}
+.ant-tabs .ant-tabs-ink-bar {
+  background: #c29c74;
+}
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom-color: #d9d9d9;
+}
